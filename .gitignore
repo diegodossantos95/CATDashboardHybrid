@@ -1,0 +1,12 @@
+.DS_Store
+platforms
+hooks
+plugins/android.json
+plugins/ios.json
+plugins/browser.json
+.settings
+.project
+#no binaries
+*.apk
+*.ipa
+node_modules
