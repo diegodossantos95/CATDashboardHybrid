@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+    <Dialog id="idCreateProjectDialog" title="{i18n>CREATE_PROJECT_TITLE}">
+        <content>
+            <form:SimpleForm>
+                <form:content>
+                    <Label text="{i18n>CREATE_PROJECT_NAME_INPUT_LABEL}"/>
+                    <Input value="{CATModel>Name}"/>
+                    <Label text="{i18n>CREATE_PROJECT_STARTDATE_INPUT_LABEL}"/>
+                    <DatePicker dateValue="{CATModel>StartDate}"/>
+                    <Label text="{i18n>CREATE_PROJECT_ENDDATE_INPUT_LABEL}"/>
+                    <DatePicker dateValue="{CATModel>EndDate}"/>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <buttons>
+            <Button text="{i18n>SAVE_BUTTON}" press="onSaveNewProjectDialog" />
+            <Button text="{i18n>CANCEL_BUTTON}" press="onCancelNewProjectDialog" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
