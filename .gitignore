@@ -1,12 +1,14 @@
 .DS_Store
-platforms
-hooks
-plugins/android.json
-plugins/ios.json
-plugins/browser.json
+src/platforms
+src/hooks
+src/plugins/android.json
+src/plugins/ios.json
+src/plugins/browser.json
+src/node_modules
 .settings
 .project
 #no binaries
 *.apk
 *.ipa
-node_modules
+src/www/i18n/i18n_en.properties
+src/tests/ui/screenshot_*
