@@ -1,0 +1,63 @@
+ [
+     {
+         "__metadata": {
+             "id": "http://localhost:8083/CATIssues.svc/Projects(1000)",
+             "uri": "http://localhost:8083/CATIssues.svc/Projects(1000)",
+             "type": "catIssuesBackend.Project"
+         },
+         "EndDate": "/Date(1491534000000)/",
+         "Id": 1000,
+         "Name": "Project1",
+         "StartDate": "/Date(1482112800000)/",
+         "IssueDetails": {
+             "results": [
+                 {
+                     "__metadata": {
+                         "id": "http://localhost:8083/CATIssues.svc/Issues(1000)",
+                         "uri": "http://localhost:8083/CATIssues.svc/Issues(1000)",
+                         "type": "catIssuesBackend.Issue"
+                     },
+                     "Category": 1,
+                     "Description": "Issue 1 Description",
+                     "Id": 1000,
+                     "Name": "Issue 1",
+                     "Priority": 1,
+                     "Project": 1000,
+                     "Status": 2,
+                     "IssueCategoryDetails": {
+                         "__metadata": {
+                             "id": "http://localhost:8083/CATIssues.svc/IssueCategories(1)",
+                             "uri": "http://localhost:8083/CATIssues.svc/IssueCategories(1)",
+                             "type": "catIssuesBackend.IssueCategory"
+                         },
+                         "Id": 1,
+                         "Name": "Bug"
+                     },
+                     "IssuePriorityDetails": {
+                         "__metadata": {
+                             "id": "http://localhost:8083/CATIssues.svc/IssuePriorities(1)",
+                             "uri": "http://localhost:8083/CATIssues.svc/IssuePriorities(1)",
+                             "type": "catIssuesBackend.IssuePriority"
+                         },
+                         "Id": 1,
+                         "Name": "Showstopper"
+                     },
+                     "ProjectDetails": {
+                         "__deferred": {
+                             "uri": "http://localhost:8083/CATIssues.svc/Issues(1000)/ProjectDetails"
+                         }
+                     },
+                     "IssueStatusDetails": {
+                         "__metadata": {
+                             "id": "http://localhost:8083/CATIssues.svc/IssueStatuses(2)",
+                             "uri": "http://localhost:8083/CATIssues.svc/IssueStatuses(2)",
+                             "type": "catIssuesBackend.IssueStatus"
+                         },
+                         "Id": 2,
+                         "Name": "In Progress"
+                     }
+                 }
+             ]
+         }
+     }
+]

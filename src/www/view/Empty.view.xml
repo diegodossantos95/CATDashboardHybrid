@@ -1,0 +1,4 @@
+<mvc:View
+	controllerName="com.sap.cloudscame.CATDashboard.controller.Empty"
+	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+</mvc:View>

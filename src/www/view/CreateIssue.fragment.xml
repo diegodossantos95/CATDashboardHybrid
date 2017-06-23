@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+    <Dialog id="idCreateIssueDialog" title="{i18n>CREATE_ISSUE_TITLE}">
+        <content>
+            <form:SimpleForm>
+                <form:content>
+                    <Label text="{i18n>CREATE_ISSUE_NAME_INPUT_LABEL}"/>
+                    <Input value="{CATModel>Name}"/>
+                    <Label text="{i18n>CREATE_ISSUE_DESCRIPTION_INPUT_LABEL}"/>
+                    <TextArea value="{CATModel>Description}"/>
+                    <Label text="{i18n>CREATE_ISSUE_CATEGORY_SELECT_LABEL}"/>
+                    <Select items="{CATModel>/IssueCategories}" selectedKey="{path: 'CATModel>Category', type: 'sap.ui.model.type.Integer'}">
+                        <core:Item text="{CATModel>Name}" key="{CATModel>Id}"/>
+                    </Select>
+                    <Label text="{i18n>CREATE_ISSUE_PRIORITY_SELECT_LABEL}"/>
+                    <Select items="{CATModel>/IssuePriorities}" selectedKey="{path: 'CATModel>Priority', type: 'sap.ui.model.type.Integer'}">
+                        <core:Item text="{CATModel>Name}" key="{CATModel>Id}"/>
+                    </Select>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <buttons>
+            <Button text="{i18n>SAVE_BUTTON}" press="onSaveNewIssueDialog" />
+            <Button text="{i18n>CANCEL_BUTTON}" press="onCancelNewIssueDialog" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
