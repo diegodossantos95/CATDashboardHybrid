@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sap.cordova.onelandscape" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>OnlineCordovaTest</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+	<access origin="*" />
+    <plugin name="kapsel-plugin-corelibs" spec="3.9.0-sap-11" />   
+    <plugin name="cordova-plugin-camera" spec="^1.2.0" />
+    <plugin name="cordova-plugin-device" spec="^1.0.1" />
+    <plugin name="cordova-plugin-network-information" spec="^1.0.1" />    
+    <plugin name="cordova-plugin-contacts" spec="^1.1.0" />
+    <plugin name="cordova-plugin-file" spec="^3.0.0" />
+    <plugin name="cordova-plugin-geolocation" spec="^1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="^1.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="^2.1.0" />
+    <plugin name="cordova-plugin-network-information" spec="^1.0.1" />    
+</widget>

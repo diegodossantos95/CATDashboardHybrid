@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>OTA Install Page</title>
+    <meta name="scm-type" content="git">
+    <meta name="repo" content="ssh://git.wdf.sap.corp:29418/prod/iOS/main.git">
+    <meta name="branch" content="ota-service-sap-template">
+    <style>
+        .buildInfo {
+            font-family: sans-serif;
+            font-size: 7pt;
+            color: grey;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="iframe" src="https://apple-ota.wdf.sap.corp:8443/ota-service/HTML?title=@title@&bundleIdentifier=@bundleIdentifier@&bundleVersion=@bundleVersion@&ipaClassifier=Release-iphoneos&otaClassifier=Release-iphoneos-ota" width="700px" height="450px" marginheight="0" marginwidth="0"
+        frameborder="0">
+        <b>Click below to open OTA Installer Page</b>
+        <form action="https://apple-ota.wdf.sap.corp:8443/ota-service/HTML" method="POST">
+            <input type="hidden" name="title" value="@title@" />
+            <input type="hidden" name="bundleIdentifier" value="@bundleIdentifier@" />
+            <input type="hidden" name="bundleVersion" value="@bundleVersion@" />
+            <input type="hidden" name="ipaClassifier" value="Release-iphoneos" />
+            <input type="hidden" name="otaClassifier" value="Release-iphoneos-ota" />
+            <input type="hidden" id="formReferer" name="Referer" value="" />
+            <input type="submit" />
+            <form>
+    </iframe>
+
+    <script language="javascript" type="text/javascript">
+        var thisUrl = document.location;
+        var iframe = document.getElementById("iframe");
+        iframe.src = iframe.src + "&Referer=" + encodeURIComponent(thisUrl);
+        var formReferer = document.getElementById("formReferer");
+        formReferer.value = encodeURIComponent(thisUrl);
+    </script>
+
+    <br/>
+</body>
+
+</html>

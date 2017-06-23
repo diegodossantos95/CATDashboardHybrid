@@ -1,0 +1,21 @@
+[Build]
+label = gen
+gendir = C:\Users\I848202\Documents\Dev\CATDashboardHybrid\gen
+
+[Source]
+project-root = C:\Users\I848202\Documents\Dev\CATDashboardHybrid
+
+[NPMRepo]
+import-repos = ['http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.milestones.npm/']
+
+[DockerRepo]
+export-repo = dockerdevregistry.wdf.sap.corp:5000
+import-repos = ['dockerdevregistry.wdf.sap.corp:5000']
+
+[CommonRepo]
+export-repo = https://nexus.wdf.sap.corp:8443/nexus/content/repositories/deploy.snapshots/
+import-repos = ['http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.snapshots/', 'http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.milestones/']
+
+[BuildVariant]
+target = local
+

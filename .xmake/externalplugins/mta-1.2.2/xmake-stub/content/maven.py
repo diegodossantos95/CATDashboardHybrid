@@ -1,0 +1,2 @@
+class content:
+	pass

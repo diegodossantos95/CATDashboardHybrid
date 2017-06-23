@@ -1,0 +1,9 @@
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url></url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>

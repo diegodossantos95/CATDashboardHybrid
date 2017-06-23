@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coordinateSystem xmlns="urn:xml.sap.com:ArtifactRepository:ArtifactVariants:CoordinateSystem" schemaVersion="0.2" >
+	<id>
+		<groupId>com.sap.commonrepo.coordinatesystems</groupId>
+		<artifactId>kapsel</artifactId>
+		<version>0.1</version>
+	</id>
+	<dimensions>
+		<dimension name="platform">
+			<value name="android"/>
+			<value name="ios"/>
+			<value name="crosswalk"/>
+		</dimension>
+		<dimension name="target">
+			<value name="local"/>
+			<value name="appstore"/>
+		</dimension>
+	</dimensions>
+</coordinateSystem>

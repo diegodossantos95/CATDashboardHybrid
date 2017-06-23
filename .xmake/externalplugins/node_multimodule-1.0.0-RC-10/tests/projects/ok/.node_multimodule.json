@@ -1,0 +1,16 @@
+{
+    "publish": {
+        "client": { "shrinkwrap": true},
+        "server": {},
+        "test": { "shrinkwrap": false }
+    },
+    "exports": {
+        "node-sap-module1": {
+            "folder": "relative/path/from/local/repo/root",
+            "classifier": "bundle"
+        },
+        "node-sap-module2": {
+            "folder": "path2"
+        }
+    }
+}

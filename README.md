@@ -1,1 +1,1 @@
-# CATDashboardHybrid
+xmake -i --purge-all  --import-repo http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.snapshots/ --import-repo http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.milestones/ -v master-SNAPSHOT -r . -V platform=android -V target=local

@@ -1,0 +1,9 @@
+imports dslVersion:"1.1", {
+//println "importing artifacts - platform was:" + buildPlatform + " - build mode was: " + buildMode
+	targetRootDir id: "default", {
+			artifactFile groupId:"com.sap.kapsel.plugins.dist",
+				artifactId:"smp-plugins-dist",
+				extension:"zip",
+				version:"3.13.0-sap-13"
+			}			
+}
